@@ -4,6 +4,8 @@
   "description": "Nossa biblioteca do curso JS com TDD na prática.",
   "main": "index.js",
   "scripts": {
+    "lint": ".\\node_modules\\.bin\\eslint src\\*.js",
+    "prepush" : "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,10 +17,16 @@
     "tdd",
     "library"
   ],
-  "author": "Ala Gustavo Santana Ribeiro <alan.gustavo@gmail.com>",
+  "author": "Alan Gustavo Santana Ribeiro <alan.gustavo@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alangustavo/js-tdd-course/issues"
   },
-  "homepage": "https://github.com/alangustavo/js-tdd-course#readme"
+  "homepage": "https://github.com/alangustavo/js-tdd-course#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.1.4"
+  }
 }
